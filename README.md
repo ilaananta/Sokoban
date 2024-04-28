@@ -2,7 +2,7 @@
  
 This repository contains a Python program designed to solve Sokoban puzzles efficiently using various heuristics. The game Sokoban is a transportation puzzle where the playing arena is composed of a grid of squares. Some of the squares are marked as boxes where the player has to push to a goal on the board. Some of the squares are marked as walls which act as constraints where the player as well as the boxes cannot enter. The initial state consists of a player at a certain x,y location on the grid and certain locations marked boxes and target stores. The player can move horizontally or vertically (in four directions - Up, Down, Left, and Right). The player can push, at most a single box into an empty space that is not a wall or another box. The player is not allowed to pull the boxes too. There are an equal number of boxes and target goals, and the player succeeds once all boxes are in goal locations. The player fails if a box gets locked up in a corner or with another box with the goal being unoccupied. One of the things that makes the Sokoban problem so difficult to solve is the large branching factor and the significant length of the average solution, resulting in a search space too big for even an informed search agent with good heuristics to solve in a practical amount of time. We attempted to overcome this by trying different approaches.
 
-##Approach
+## Approach
 We tried to solve the Sokoban problem using A* algorithm. Under the right conditions i.e., heuristics, this algorithm can minimize the cost and provide the solution in optimal time.
 
 ## Heuristics Explored
